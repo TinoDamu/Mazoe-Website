@@ -10,18 +10,15 @@
 <section class="sec">
     <header>
         <a href="#"><img src="logo.png" class="logo"></a>
-
-        <ul class="navbar">
+        <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#" target="_blank">Products</a></li>
+            <li><a href="Products Catalogue/ProductsCat.html" target="_blank">Products</a></li>
             <li><a href="#">What's New</a></li>
-            <li><a href="#">Newsletter</a></li>
+            <li><a href="MazoeOrangeCrush.html">Newsletter</a></li>
             <li><a href="Email Me.html" target="_blank">Contact</a></li>
         </ul>
     </header>
-
     <div class="content">
-
         <div class="textBox">
             <h2>Quench Your Thirst<br><span>The Mazoe Way</span></h2>
             <p>Mazoe is a homegrown cordial that has been trusted by generations
@@ -30,12 +27,10 @@
             1 litre and 2 litre packs. </p>
             <a href="Products Catalogue/ProductsCat.html">View All Products</a>
         </div>
-
         <div class="imgBox">
             <img src="mazoeorangecrush.png" class="mazoe">
         </div>
     </div>
-
     <ul class="thumb">
         <li><img src="mazoeorangecrush.png" onclick="imgSlider( 'mazoeorangecrush.png');changeBgColor('#fec404f3')"></li>
         <li><img src="mazoecreamsoda.png" onclick="imgSlider('mazoecreamsoda.png');changeBgColor('#0f9b24')"></li>
@@ -46,10 +41,6 @@
     </ul>
 </section>
 
-<div class="last">
-    <p>©Tinotenda Damu</p>
-</div>
-
 <script type="text/javascript">
     function imgSlider(anything){
         document.querySelector('.mazoe').src = anything;
@@ -58,7 +49,6 @@
     function changeBgColor(color){
         const sec = document.querySelector('.sec');
         sec.style.background = color;
-        sec.navbar.color = color;
     }
 </script>
 </body>
